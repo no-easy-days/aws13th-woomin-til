@@ -37,7 +37,7 @@
 # 제너레이터 표현식
 <img width="858" height="323" alt="image" src="https://github.com/user-attachments/assets/ad9e4d5e-b3d1-4748-aa36-8b44ff12e28e" />
 
-<img width="702" height="103" alt="image" src="https://github.com/user-attachments/assets/2a75aead-fb6d-42b3-963e-eace026acd85" 
+<img width="702" height="103" alt="image" src="https://github.com/user-attachments/assets/2a75aead-fb6d-42b3-963e-eace026acd85" />
 
 
 
