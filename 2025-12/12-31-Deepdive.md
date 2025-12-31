@@ -42,6 +42,8 @@
 
 
 # Yield
+- yield를 만나면 파이썬은 함수 실행을 끝내지 않고,
+ 현재 상태를 통째로 저장한 뒤 멈춥니다.
 <img width="1095" height="600" alt="image" src="https://github.com/user-attachments/assets/646da068-beda-462c-93b4-ae7b4c4ea528" />
 
 
