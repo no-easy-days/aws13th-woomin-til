@@ -32,4 +32,8 @@
 # Yield
 <img width="1095" height="600" alt="image" src="https://github.com/user-attachments/assets/646da068-beda-462c-93b4-ae7b4c4ea528" />
 
+# 결론
+<img width="1041" height="342" alt="image" src="https://github.com/user-attachments/assets/264c43bc-53ce-459b-8346-dd36e69e0809" />
+<img width="663" height="208" alt="image" src="https://github.com/user-attachments/assets/cc6a83ec-284c-49fb-b390-606b1720875f" />
+
 
