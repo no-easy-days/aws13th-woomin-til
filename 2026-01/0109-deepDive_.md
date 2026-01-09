@@ -44,11 +44,12 @@
 ## Type Hint
 - 이 변수·함수에는 이런 타입이 들어올 거다”라고 미리 적어 두는 표기법
 <img width="870" height="713" alt="image" src="https://github.com/user-attachments/assets/d6cd7578-54e0-490d-aced-b4a72ea90ae1" />
-<br/><br/>
+
 
 ## Pydantic
 - 타입 힌트를 이용해 데이터 검증과 setting 관리를 해주는 라이브러리
 > 데이터 파싱(Parsing): 단순히 "틀렸다"고 말하는 게 아니라, 데이터를 적절한 타입으로 변환하려고 시도 (ex. 문자열 "123"을 정수 123으로 자동 변환)
+
 <br/><br/>
 
 ## 회원가입 폼에서 이메일 주소 칸에 '안녕하세요'라고 적으면??
