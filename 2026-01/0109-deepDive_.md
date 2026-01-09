@@ -49,6 +49,8 @@
 ## Pydantic
 - 타입 힌트를 이용해 데이터 검증과 setting 관리를 해주는 라이브러리
 > 데이터 파싱(Parsing): 단순히 "틀렸다"고 말하는 게 아니라, 데이터를 적절한 타입으로 변환하려고 시도 (ex. 문자열 "123"을 정수 123으로 자동 변환)
+<img width="1280" height="630" alt="image" src="https://github.com/user-attachments/assets/4ffd9974-46aa-4683-9bac-f6664adf9ba3" />
+
 
 <br/><br/>
 
