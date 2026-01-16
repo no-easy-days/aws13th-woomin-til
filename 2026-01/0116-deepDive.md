@@ -63,7 +63,7 @@
 - 다음과 같은 단어들만 쓰는것은 지양 <br /> 123456, abc123, password, computer, a1b2c3, qwerty, secret, 1q2w3e4r 등
 - 외국계 해커 상대로는 한타를 영타 그대로 치는 것도 좋은 방법 <br /> zmffkdnem13rl! ; 중간에 시프트가 필요한 쌍자음이 있으면 금상첨화 <br /><br />
 ## salt
-- 유래는 소금(salt). 소금이 기본 양념이듯 원문에 가미하여 암호문을 다른 값으로 만드는 것이다.
+- 유래는 소금(salt). 소금이 기본 양념이듯 원문에 가미하여 암호문을 다른 값으로 만드는 것이다. <br /><br />
 <img width="610" height="454" alt="image" src="https://github.com/user-attachments/assets/91c92910-1efd-468e-bd6b-c112ec6e18ca" /> <br /><br />
 
 ## Jeff의 의견 : 왜 같은 비밀번호라도 다른 해시값이 나와야 하는가?
