@@ -1,9 +1,9 @@
 ## 암호화(Encryption)
 - 데이터를 키(key) 를 사용해 알아볼 수 없게 변환하고,같은 키 또는 대응되는 키로 다시 복원(복호화) 할 수 있는 기술
-- 대표 알고리즘으로 대칭키에는 AES,DES, 공개키에는 RSA, ECC 등이 있다.
+- 대표 알고리즘으로 대칭키에는 AES,DES, 공개키에는 RSA, ECC 등이 있다. <br /><br />
 ## 대칭키 vs. 공개키 
 > 대칭키 (Symmetric Key algorithm)
-<img width="1309" height="631" alt="image" src="https://github.com/user-attachments/assets/1ec3310a-a2ea-4657-bfc5-7a8af4eb47df" />
+<img width="1309" height="631" alt="image" src="https://github.com/user-attachments/assets/1ec3310a-a2ea-4657-bfc5-7a8af4eb47df" /> 
 
 - 지금껏 널리 사용되어옴
 - 중간에 누가 훔쳐보더라도 알아볼수 없음
@@ -18,33 +18,33 @@
 - 네이버 서버는 이 두 키중 하나는 비밀로 보관하고(개인키), <br />다른하나를 대중들에게 공개함(공개키)
 - 사용자는 공개키로 비밀번호를 암호화해서 네이버에 보냄
 - 누가 가로채면?? 같은 공개키로는 암호문을 풀어낼수 없음
-- 볼수있는건?? 개인키를 가진 네이버만.
+- 볼수있는건?? 개인키를 가진 네이버만. <br /><br />
 
 ## 해시(Hash) 
 - 임의 길이의 데이터를 고정 길이의 값(해시값) 으로 변환하는 함수
 - 복호화 불가능
 - 같은 입력 → 항상 같은 해시값
 - 입력이 조금만 바뀌어도 해시값은 완전히 달라짐
-- 종류로는 SHA-1, SHA-256, MD5, CRC, Argon2, Bcrypt 등이 있다.
+- 종류로는 SHA-1, SHA-256, MD5, CRC, Argon2, Bcrypt 등이 있다. <br /><br />
 
 ## Jeff의 의견 : 왜 비밀번호를 데이터베이스에 그대로(평문으로) 저장하면 안 되는가?
 - 서버DB가 해킹당하면... 비밀번호 원본이 그대로 유출됨 
 - 또한 서버 관리자가 사용자의 비밀번호를 함부로 보는 경우를 막기 위해서도 필요함
 - 우리나라에선 개인정보보호법에 의거하여 위 사항을 강제함
 - 「개인정보보호법」제29조 (안전조치의무) ...(중략)... <br />
-① 개인정보처리자는 비밀번호, 생체인식정보 등 인증정보를 저장하거나 정보통신망을 통해 송·수신하는 경우에는 이를 안전한 암호화 기능을 적용하여 보호하여야 한다...(이하생략)
+① 개인정보처리자는 비밀번호, 생체인식정보 등 인증정보를 저장하거나 정보통신망을 통해 송·수신하는 경우에는 이를 안전한 암호화 기능을 적용하여 보호하여야 한다...(이하생략) <br /><br />
 
 ## 보안과 해시
 - 원본 데이터와 다른 입력값이 (예컨대 복사본이나 키보드 입력으로 입력 받은 비밀번호가) 같은지 확인하는 작업을 둘의 해시값을 대신 비교하는 것으로 갈음할 수 있다.
 - 비밀번호, 전자서명, 전자투표, 전자상거래와 같은 민감한 입력의 무결성을 검증할 때 사용됨
 <br /><br />
 <img width="476" height="527" alt="image" src="https://github.com/user-attachments/assets/e3d06e33-7ce1-4fa7-a787-d398a1e6f2cd" /> <br /><br />
-<img width="486" height="588" alt="image" src="https://github.com/user-attachments/assets/26fb7fe1-1a79-4276-9482-457d93befe5f" /> <br /><br />
-- 따라서 서버에서는 비밀번호 원본이 아닌 해시값을 저장해야 한다. 
+<img width="486" height="588" alt="image" src="https://github.com/user-attachments/assets/26fb7fe1-1a79-4276-9482-457d93befe5f" /> <br />
+- 따라서 서버에서는 비밀번호 원본이 아닌 해시값을 저장해야 한다. <br /><br />
 
 ## 눈사태 효과(Avalanche Effect)
 - 원문(Plaintext)의 한 비트의 변화가 최종 암호문(Ciphertext)에 큰 변화를 주는 효과
-<img width="732" height="194" alt="image" src="https://github.com/user-attachments/assets/9ee8cf67-c9f0-438f-bed3-e0acd55a9254" />
+<img width="732" height="194" alt="image" src="https://github.com/user-attachments/assets/9ee8cf67-c9f0-438f-bed3-e0acd55a9254" /> <br /><br />
 
 ## 그럼에도 불구하고... 해킹??
 > 브루트 포스(Brute Force) 방식
@@ -61,14 +61,14 @@
 > 대비 방법
 - 암호는 최소 10자리 이상 ; 암호에 특수문자를 사용하면 좀 더 좋겠지만, 특수 문자 안 쓰고 그냥 암호의 길이가 길기만 해도 된다.
 - 다음과 같은 단어들만 쓰는것은 지양 <br /> 123456, abc123, password, computer, a1b2c3, qwerty, secret, 1q2w3e4r 등
-- 외국계 해커 상대로는 한타를 영타 그대로 치는 것도 좋은 방법 <br /> zmffkdnem13rl! ; 중간에 시프트가 필요한 쌍자음이 있으면 금상첨화
+- 외국계 해커 상대로는 한타를 영타 그대로 치는 것도 좋은 방법 <br /> zmffkdnem13rl! ; 중간에 시프트가 필요한 쌍자음이 있으면 금상첨화 <br /><br />
 ## salt
 - 유래는 소금(salt). 소금이 기본 양념이듯 원문에 가미하여 암호문을 다른 값으로 만드는 것이다.
-<img width="610" height="454" alt="image" src="https://github.com/user-attachments/assets/91c92910-1efd-468e-bd6b-c112ec6e18ca" />
+<img width="610" height="454" alt="image" src="https://github.com/user-attachments/assets/91c92910-1efd-468e-bd6b-c112ec6e18ca" /> <br /><br />
 
 ## Jeff의 의견 : 왜 같은 비밀번호라도 다른 해시값이 나와야 하는가?
 - 같은 비밀번호여도 해시값 완전히 다름
-- 레인보우 테이블 무력화
+- 레인보우 테이블 무력화 <br /><br />
 
 ## bcrypt
 - 블로피시 암호에 기반을 둔 암호화 해시 함수
@@ -77,8 +77,12 @@
 - salt가 기본 내장
 - cost(work factor) 조절 가능
 - 출력 포맷에 모든 정보 포함
-<img width="935" height="528" alt="image" src="https://github.com/user-attachments/assets/0de49de2-756b-4b6f-82e3-5672867e8034" />
+<img width="935" height="528" alt="image" src="https://github.com/user-attachments/assets/0de49de2-756b-4b6f-82e3-5672867e8034" /> <br /><br />
 
 ## passlib
 - 여러 비밀번호 해시 알고리즘을 안전한 방식으로 쉽게 쓰게 해주는 라이브러리
-- 언어: Python, 목적: 비밀번호 저장 / 검증 전용
+- 언어: Python, 목적: 비밀번호 저장 / 검증 전용 <br /><br />
+
+## Jeff의 의견 : bcrypt + Salt 조합을 직접 구현해 보고, 같은 비밀번호 "1234"가 매번 다른 해시값으로 저장되는 것을 확인해 보세요!
+<img width="991" height="1020" alt="image" src="https://github.com/user-attachments/assets/4356524f-2931-496d-a925-928ade3fca29" />
+
