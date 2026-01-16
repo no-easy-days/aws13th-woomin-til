@@ -84,5 +84,6 @@
 - 언어: Python, 목적: 비밀번호 저장 / 검증 전용 <br /><br />
 
 ## Jeff의 의견 : bcrypt + Salt 조합을 직접 구현해 보고, 같은 비밀번호 "1234"가 매번 다른 해시값으로 저장되는 것을 확인해 보세요!
-<img width="991" height="1020" alt="image" src="https://github.com/user-attachments/assets/4356524f-2931-496d-a925-928ade3fca29" />
+<img width="1261" height="1036" alt="image" src="https://github.com/user-attachments/assets/e397749f-2edf-477f-8963-a64db25685b8" />
+
 
