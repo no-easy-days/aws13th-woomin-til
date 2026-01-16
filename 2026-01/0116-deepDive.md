@@ -1,6 +1,6 @@
 ## 암호화(Encryption)
 - 데이터를 키(key) 를 사용해 알아볼 수 없게 변환하고,같은 키 또는 대응되는 키로 다시 복원(복호화) 할 수 있는 기술
-- 대표 알고리즘으로 대칭키에는 AES,DES공개키에는 RSA, ECC 등이 있다.
+- 대표 알고리즘으로 대칭키에는 AES,DES, 공개키에는 RSA, ECC 등이 있다.
 ## 대칭키 vs. 공개키 
 > 대칭키 (Symmetric Key algorithm)
 <img width="1309" height="631" alt="image" src="https://github.com/user-attachments/assets/1ec3310a-a2ea-4657-bfc5-7a8af4eb47df" />
@@ -71,5 +71,14 @@
 - 레인보우 테이블 무력화
 
 ## bcrypt
+- 블로피시 암호에 기반을 둔 암호화 해시 함수
+> 특징
+- 일부러 느림 : 한 번 계산하는 데 수십~수백 ms, GPU로 대량 병렬 공격하기 어렵게 설계됨 <br />브루트포스 공격 방어 용이
+- salt가 기본 내장
+- cost(work factor) 조절 가능
+- 출력 포맷에 모든 정보 포함
+<img width="935" height="528" alt="image" src="https://github.com/user-attachments/assets/0de49de2-756b-4b6f-82e3-5672867e8034" />
 
 ## passlib
+- 여러 비밀번호 해시 알고리즘을 안전한 방식으로 쉽게 쓰게 해주는 라이브러리
+- 언어: Python, 목적: 비밀번호 저장 / 검증 전용
